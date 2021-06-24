@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfun() {
+
+            //target uname Input Element 
+            var inputDOM = document.getElementById('uname')
+
+            //target b Element
+            var boldTagDOM = document.getElementById('unameMsg')
+
+            //initialize the input value to bold Tag 
+            boldTagDOM.innerText = inputDOM.value.length
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <label for="">Name</label>
+    <input type="text" id="uname" maxlength="50" onkeyup="myfun()" />
+    <b id="unameMsg">0</b>/50
+
+    <br><br>
+    <button onclick="myfun()" type="button">GetData</button>
+
+
+</body>
+
+</html>
